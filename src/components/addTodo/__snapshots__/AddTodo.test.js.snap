@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders todo form 1`] = `
+<form>
+  <label
+    htmlFor="todo"
+  >
+    To Do
+  </label>
+  <input
+    id="input todo"
+    name="todo"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <label
+    htmlFor="date"
+  >
+    Date
+  </label>
+  <input
+    id="input date"
+    name="date"
+    onChange={[Function]}
+    type="date"
+    value=""
+  />
+  <label
+    htmlFor="submit"
+  >
+    Submit
+  </label>
+  <input
+    onClick={[Function]}
+    type="button"
+    value="Add Todo"
+  />
+</form>
+`;
