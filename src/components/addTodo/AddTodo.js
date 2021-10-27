@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./addtodo.css";
 
 export default function AddTodo(props) {
@@ -33,6 +33,7 @@ export default function AddTodo(props) {
   return (
     <form>
       <label htmlFor="todo">To Do</label>
+      <p>Hi</p>
       <input
         name="todo"
         type="text"
