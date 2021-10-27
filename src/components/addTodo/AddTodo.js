@@ -37,7 +37,7 @@ export default function AddTodo(props) {
       <input
         name="todo"
         type="text"
-        id="input todo"
+        id="todo"
         value={todo}
         onChange={changeValue}
       />
@@ -45,7 +45,7 @@ export default function AddTodo(props) {
       <input
         name="date"
         type="date"
-        id="input date"
+        id="date"
         value={date}
         onChange={changeValue}
       />
