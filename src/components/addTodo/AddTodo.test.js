@@ -28,7 +28,7 @@ describe("Todo properties", () => {
       // const dateInput = component.container.querySelector('#date')
       const dateInput = component.queryByPlaceholderText(`${dateNow}`)
 
-    //   expect(dateInput)
+      expect(dateInput).not.toBeNull()
   });
 });
 
