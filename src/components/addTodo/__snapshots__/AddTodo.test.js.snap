@@ -7,9 +7,6 @@ exports[`Todo properties Renders todo form component 1`] = `
   >
     To Do
   </label>
-  <p>
-    Hi
-  </p>
   <input
     id="todo"
     name="todo"
@@ -26,6 +23,7 @@ exports[`Todo properties Renders todo form component 1`] = `
     id="date"
     name="date"
     onChange={[Function]}
+    placeholder="YYYY-MM-DD"
     type="date"
     value=""
   />
@@ -35,6 +33,7 @@ exports[`Todo properties Renders todo form component 1`] = `
     Submit
   </label>
   <input
+    id="submit"
     onClick={[Function]}
     type="button"
     value="Add Todo"
