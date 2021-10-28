@@ -12,10 +12,8 @@ function App() {
   const [todos, setTodos] = useState(initialTodos);
 
   function addTodo(todo) {
-    console.log(todo);
-    // ...adds todo to todos list state object
     // organize id's
-    // setTodos([...initialTodos, todo])
+    setTodos([...initialTodos, todo])
   }
 
   return (
