@@ -27,13 +27,15 @@ export default function AddTodo(props) {
       todo: todo,
       date: date,
     };
+
     addTodo(createdTodo);
+    setTodo("");
+    setDate("");
   }
 
   return (
     <form>
       <label htmlFor="todo">To Do</label>
-      <p>Hi</p>
       <input
         name="todo"
         type="text"
@@ -47,10 +49,16 @@ export default function AddTodo(props) {
         type="date"
         id="date"
         value={date}
+        placeholder="YYYY-MM-DD"
         onChange={changeValue}
       />
       <label htmlFor="submit">Submit</label>
-      <input type="button" value="Add Todo" onClick={createTodoAndSend} />
+      <input
+        type="button"
+        id="submit"
+        value="Add Todo"
+        onClick={createTodoAndSend}
+      />
     </form>
   );
 }
