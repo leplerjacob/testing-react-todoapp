@@ -3,6 +3,10 @@ import { render, fireEvent } from "@testing-library/react";
 import renderer from "react-test-renderer";
 import AddTodo from "./AddTodo";
 
+/* TODO
+  - Change from render component to enzyme shallow
+*/ 
+
 describe("Todo properties", () => {
   let component;
   beforeEach(() => {

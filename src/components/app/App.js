@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import AddTodo from "../addTodo/AddTodo";
+import ListTodos from "../listTodos/ListTodos";
 
 const initialTodos = [
   { id: 1, todo: "Walk the dog", date: "2021-10-20" },
@@ -12,13 +13,14 @@ function App() {
   const [todos, setTodos] = useState(initialTodos);
 
   function addTodo(todo) {
-    setTodos([...initialTodos, todo])
+    setTodos([...initialTodos, todo]);
   }
 
   return (
     <div className="App">
       <h1 className="header welcome">Todo Application</h1>
       <AddTodo addTodo={addTodo} />
+      <ListTodos todos={todos} />
     </div>
   );
 }

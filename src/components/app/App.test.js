@@ -4,6 +4,7 @@ import toJSON from "enzyme-to-json";
 import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import App from "./App";
 import AddTodo from "../addTodo/AddTodo";
+import ListTodos from "../listTodos/ListTodos";
 
 Enzyme.configure({ adapter: new Adapter() });
 
