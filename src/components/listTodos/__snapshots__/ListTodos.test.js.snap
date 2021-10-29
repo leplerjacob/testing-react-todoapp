@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListTodos properties renders ListTodos component 1`] = `
+<div>
+  <ul>
+    <li
+      key="1"
+    >
+      Walk the dog
+    </li>
+    <li
+      key="2"
+    >
+      Visit grandparents
+    </li>
+    <li
+      key="3"
+    >
+      Attend React conference
+    </li>
+  </ul>
+</div>
+`;
