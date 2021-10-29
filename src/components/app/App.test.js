@@ -1,5 +1,4 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
 import Enzyme, { shallow } from "enzyme";
 import toJSON from "enzyme-to-json";
 import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
@@ -14,20 +13,22 @@ describe("App properties", () => {
     wrapper = shallow(<App />);
   });
   afterEach(() => {
-      wrapper.unmount()
-  })
+    wrapper.unmount();
+  });
 
   test("renders app component", () => {
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
-  test("app renders todoApp component", () => {
+  test("app renders addTodo component", () => {
     expect(wrapper.find(AddTodo)).toHaveLength(1);
   });
 
-  test("app has initial state", () => {
-      console.log(wrapper.state("todos"))
+  test("app renders ListTodos component", () => {
+    expect(wrapper.find(ListTodos)).toHaveLength(1);
   });
 
-  test("app state changes after event", () => {});
+  // test("updates state upon addTodo function", () => {
+
+  // });
 });

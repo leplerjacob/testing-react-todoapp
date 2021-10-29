@@ -12,7 +12,6 @@ function App() {
   const [todos, setTodos] = useState(initialTodos);
 
   function addTodo(todo) {
-    // organize id's
     setTodos([...initialTodos, todo])
   }
 
