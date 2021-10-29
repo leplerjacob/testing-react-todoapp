@@ -12,5 +12,26 @@ exports[`App properties renders app component 1`] = `
   <AddTodo
     addTodo={[Function]}
   />
+  <ListTodos
+    todos={
+      Array [
+        Object {
+          "date": "2021-10-20",
+          "id": 1,
+          "todo": "Walk the dog",
+        },
+        Object {
+          "date": "2021-10-22",
+          "id": 2,
+          "todo": "Visit grandparents",
+        },
+        Object {
+          "date": "2021-10-26",
+          "id": 3,
+          "todo": "Attend React conference",
+        },
+      ]
+    }
+  />
 </div>
 `;
