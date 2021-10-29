@@ -18,19 +18,13 @@ describe("Todo properties", () => {
   });
 
   test("Updates date on change", () => {
-    // handles offset timezone
-    let dateNow = new Date();
-    const offset = dateNow.getTimezoneOffset();
-    dateNow = new Date(dateNow.getTime() - (offset * 60 - 1000))
-      .toISOString()
-      .split("T")[0];
+    const date = "2021-10-28";
 
     const dateInput = component.container.querySelector("#date");
 
-    fireEvent.change(dateInput, { target: { value: dateNow } });
+    fireEvent.change(dateInput, { target: { value: date } });
 
-    // const updatedInput = component.getByDisplayValue(dateNow);
-    expect(dateInput.value).toBe(dateNow);
+    expect(dateInput.value).toBe(date);
   });
 
   test("Updates todo on change", () => {

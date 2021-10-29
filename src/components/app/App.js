@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import AddTodo from "./components/addTodo/AddTodo";
+import AddTodo from "../addTodo/AddTodo";
 
 const initialTodos = [
   { id: 1, todo: "Walk the dog", date: "2021-10-20" },
