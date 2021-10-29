@@ -11,9 +11,11 @@ export default function AddTodo(props) {
     switch (e.target.name) {
       case "todo": {
         setTodo(e.target.value);
+        break;
       }
       case "date": {
         setDate(e.target.value);
+        break;
       }
       default: {
         return;
